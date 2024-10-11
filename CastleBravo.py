@@ -12,14 +12,11 @@ MAGENTA = "\033[35m"
 CYAN = "\033[36m"
 WHITE = "\033[37m"
 
-# You can change the color below to any defined color (e.g., RED, GREEN, BLUE, etc.)
-welcome_color = CYAN
-selected_color = BLUE  # Change this to any color you prefer
-exit_color = GREEN
-
-
 # Display a welcome message when the program starts (using the selected color)
-print(welcome_color + "\nWelcome to InfoTechCenter V1.0\n" + RESET)
+print(CYAN + "\nWelcome to InfoTechCenter V1.0\n" + RESET)
+
+timeToSleep = 1.5 #variable to set the time library to 1.5 seconds when called
+time.sleep(timeToSleep) # Calling the timeToSleep library with the variable timeToSleeps value
 
 # Initialize variables for loop control
 x = 0  # Counter to track the number of iterations
@@ -30,7 +27,7 @@ while x != 20:
     x += 1  # Increment the counter on each iteration
 
     # Construct a message that changes by adding one more dot (in the selected color)
-    message = selected_color + "InfoTechCenter System Booting" + "." * ellipsis + RESET
+    message = BLUE + "InfoTechCenter System Booting" + "." * ellipsis + RESET
 
     # Increment the number of dots after the message
     ellipsis += 1
@@ -47,4 +44,4 @@ while x != 20:
 
     # When the loop finishes after 20 iterations, display a final boot-up message (in the selected color)
     if x == 20:
-        print(exit_color + "\n\nOperating System Booted Up - Retina Scanned - Access Granted" + RESET)
+        print(GREEN + "\n\nOperating System Booted Up - Retina Scanned - Access Granted" + RESET)
