@@ -1,5 +1,7 @@
 import sys
 import time
+import random
+from time import sleep
 
 # Define ANSI escape codes for various colors and reset
 RESET = "\033[0m"
@@ -48,11 +50,6 @@ while x != 20:
 
 print("\n**********************************************\n")
 print("Weather Branch\n")
-
-# Import necessary libraries
-import random
-from time import sleep
-
 
 def weather():
     """
@@ -104,9 +101,6 @@ def vehicleResponseSystem():
         print("\nVRS System has been disengaged")
 
 vehicleResponseSystem()
-
-import random
-from time import sleep
 
 # Print a formatted separator for better readability in the console output
 print("\n**********************************************\n")
